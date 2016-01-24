@@ -18,4 +18,5 @@ NOTICES
  https://developers.google.com/maps/documentation/android-api/
  
  Here is a nice video tutorial of how to do so. (Not my video)
+ 
  https://www.youtube.com/watch?v=ZQSu48J9TBg
