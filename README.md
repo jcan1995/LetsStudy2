@@ -5,10 +5,9 @@ Initializes markers on the best places to study in, currently, the San Diego are
 
 TODO
 
-- Store all coordinates of interest and creating new markers.
+- Add "Add Location" button on map which will lead users to a new page where they can edit and save their new spot.
+- Create xml for "Add Location" fragment.
 - Customize markers to fit the theme of the application.
-- Allow users to input their own favorite places to study.
-
 - Add in more features....
 
 
