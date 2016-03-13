@@ -32,7 +32,7 @@ public class SpotsHolder{
      * Creates new instance if sInstance is null.
      */
     public static SpotsHolder getInstance(Context c){
-        if( sInstance == null){
+        if(sInstance == null){
             sInstance = new SpotsHolder(c.getApplicationContext());
 
         }

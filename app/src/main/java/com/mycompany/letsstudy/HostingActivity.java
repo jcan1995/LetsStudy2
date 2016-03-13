@@ -12,14 +12,11 @@ public class HostingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hosting);
 
-
         Fragment map = new MapFragment();
-
         android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.fragmentContainer,map);
+        transaction.replace(R.id.fragmentContainer, map);
         transaction.addToBackStack(null);
         transaction.commit();
-
     }
 
 
