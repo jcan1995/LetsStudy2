@@ -32,7 +32,7 @@ public class AddSpot extends Fragment {
                 int rate = 10;
                 //Initialize here.
                 Spots spot = new Spots(coordinates,Name,description,rate);
-                SpotsHolder.addSpots(spot);
+                SpotsHolder.get(getActivity()).addSpots(spot);
 
                 Fragment fragment = new MapFragment();
                 android.support.v4.app.FragmentTransaction transaction = getFragmentManager().beginTransaction();

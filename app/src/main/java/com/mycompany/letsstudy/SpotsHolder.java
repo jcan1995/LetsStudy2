@@ -13,7 +13,7 @@ public class SpotsHolder{
      * Declare an ArrayList.
      * Instance of class set to null, and declare apps context.
      */
-    private static ArrayList<Spots> mSpots;
+    private ArrayList<Spots> mSpots;
     private static SpotsHolder sInstance = null;
     private Context mAppContext;
 
@@ -31,7 +31,7 @@ public class SpotsHolder{
      * Returns instance of this class.
      * Creates new instance if sInstance is null.
      */
-    public static SpotsHolder getInstance(Context c){
+    public static SpotsHolder get(Context c){
         if(sInstance == null){
             sInstance = new SpotsHolder(c.getApplicationContext());
 
@@ -51,9 +51,13 @@ public class SpotsHolder{
      * Add spots passed in parameters into our ArrayList.
      * @param spot
      */
-    public static void addSpots(Spots spot){
+    public void addSpots(Spots spot){
         mSpots.add(spot);
         //Gui.updateUI();
+    }
+
+    public void deleteSpot(Spots spot){
+        mSpots.remove(spot);
     }
 
 
